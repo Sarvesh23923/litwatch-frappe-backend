@@ -1,0 +1,132 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "field:client_code",
+ "creation": "2026-09-09 10:59:09.774334",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "client_name",
+  "client_code",
+  "firm_profile",
+  "short_name",
+  "pan",
+  "sector",
+  "status",
+  "onboarding_stage",
+  "onboarding_date",
+  "default_consultant",
+  "notes",
+  "client_contacts",
+  "client_addresses"
+ ],
+ "fields": [
+  {
+   "fieldname": "client_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Client Name",
+   "reqd": 1
+  },
+  {
+   "fieldname": "client_code",
+   "fieldtype": "Data",
+   "label": "Client Code",
+   "reqd": 1,
+   "unique": 1
+  },
+  {
+   "fieldname": "firm_profile",
+   "fieldtype": "Link",
+   "label": "Firm Profile",
+   "options": "Firm Profile",
+   "reqd": 1
+  },
+  {
+   "fieldname": "short_name",
+   "fieldtype": "Data",
+   "label": "Short Name"
+  },
+  {
+   "fieldname": "pan",
+   "fieldtype": "Data",
+   "label": "PAN"
+  },
+  {
+   "fieldname": "sector",
+   "fieldtype": "Data",
+   "label": "Sector"
+  },
+  {
+   "default": "Onboarding",
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Status",
+   "options": "Active\nInactive\nOnboarding"
+  },
+  {
+   "fieldname": "onboarding_stage",
+   "fieldtype": "Select",
+   "label": "Onboarding Stage",
+   "options": "Scoping call\nEngagement letter sent\nGSTIN authorisation pending\nComplete"
+  },
+  {
+   "fieldname": "onboarding_date",
+   "fieldtype": "Date",
+   "label": "Onboarding Date"
+  },
+  {
+   "fieldname": "default_consultant",
+   "fieldtype": "Link",
+   "label": "Default Consultant",
+   "options": "Consultant"
+  },
+  {
+   "fieldname": "notes",
+   "fieldtype": "Text",
+   "label": "Notes"
+  },
+  {
+   "fieldname": "client_contacts",
+   "fieldtype": "Table",
+   "label": "Client Contacts",
+   "options": "Client Contact"
+  },
+  {
+   "fieldname": "client_addresses",
+   "fieldtype": "Table",
+   "label": "Client Addresses",
+   "options": "Client Address"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2026-09-09 14:48:57.005193",
+ "modified_by": "Administrator",
+ "module": "Litwatch",
+ "name": "Client",
+ "naming_rule": "By fieldname",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

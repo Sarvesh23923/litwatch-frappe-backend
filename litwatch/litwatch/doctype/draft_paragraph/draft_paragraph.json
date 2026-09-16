@@ -1,0 +1,52 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2026-09-09 14:29:09.504349",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "content",
+  "order",
+  "gap"
+ ],
+ "fields": [
+  {
+   "description": "Paragraph content",
+   "fieldname": "content",
+   "fieldtype": "Text",
+   "in_list_view": 1,
+   "label": "Content",
+   "reqd": 1
+  },
+  {
+   "default": "0",
+   "description": "Order of paragraph",
+   "fieldname": "order",
+   "fieldtype": "Int",
+   "label": "Order"
+  },
+  {
+   "default": "0",
+   "description": "Mark paragraphs that need CA confirmation (CA TO CONFIRM placeholders)",
+   "fieldname": "gap",
+   "fieldtype": "Check",
+   "label": "Gap"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2026-09-15 09:51:21.434681",
+ "modified_by": "Administrator",
+ "module": "Litwatch",
+ "name": "Draft Paragraph",
+ "owner": "Administrator",
+ "permissions": [],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

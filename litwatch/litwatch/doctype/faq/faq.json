@@ -1,0 +1,94 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2026-09-09 14:40:03.666684",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "question",
+  "answer",
+  "order",
+  "category",
+  "is_published",
+  "helpful_count",
+  "not_helpful_count",
+  "tags"
+ ],
+ "fields": [
+  {
+   "description": "Frequently asked question",
+   "fieldname": "question",
+   "fieldtype": "Text",
+   "in_list_view": 1,
+   "label": "Question",
+   "reqd": 1
+  },
+  {
+   "description": "Answer to the question",
+   "fieldname": "answer",
+   "fieldtype": "Text Editor",
+   "label": "Answer",
+   "reqd": 1
+  },
+  {
+   "default": "0",
+   "description": "Display order",
+   "fieldname": "order",
+   "fieldtype": "Int",
+   "label": "Order"
+  },
+  {
+   "default": "General",
+   "description": "Category for grouping FAQs",
+   "fieldname": "category",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Category",
+   "options": "General\nGetting Started\nGSTIN & Notices\nBilling & Subscription\nTechnical\nLegal"
+  },
+  {
+   "default": "1",
+   "description": "Whether this FAQ is published",
+   "fieldname": "is_published",
+   "fieldtype": "Check",
+   "label": "Is Published"
+  },
+  {
+   "default": "0",
+   "description": "Number of users who found this helpful",
+   "fieldname": "helpful_count",
+   "fieldtype": "Int",
+   "label": "Helpful Count",
+   "read_only": 1
+  },
+  {
+   "default": "0",
+   "description": "Number of users who found this not helpful",
+   "fieldname": "not_helpful_count",
+   "fieldtype": "Int",
+   "label": "Not Helpful Count",
+   "read_only": 1
+  },
+  {
+   "description": "Comma-separated tags for search",
+   "fieldname": "tags",
+   "fieldtype": "Data",
+   "label": "Tags"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2026-09-09 14:40:03.666684",
+ "modified_by": "Administrator",
+ "module": "Litwatch",
+ "name": "FAQ",
+ "owner": "Administrator",
+ "permissions": [],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "order",
+ "sort_order": "ASC",
+ "states": []
+}

@@ -1,0 +1,134 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "field:firm_profile",
+ "creation": "2026-09-09 11:01:35.514433",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "firm_profile",
+  "plan",
+  "price",
+  "gst",
+  "total",
+  "renews_on",
+  "cycle",
+  "upi",
+  "status",
+  "effective_until",
+  "prorated_charge",
+  "projected_notices",
+  "notice_cap"
+ ],
+ "fields": [
+  {
+   "fieldname": "firm_profile",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Firm Profile",
+   "options": "Firm Profile",
+   "reqd": 1,
+   "unique": 1
+  },
+  {
+   "fieldname": "plan",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Plan",
+   "options": "Plan"
+  },
+  {
+   "fieldname": "price",
+   "fieldtype": "Currency",
+   "label": "Price"
+  },
+  {
+   "fieldname": "gst",
+   "fieldtype": "Currency",
+   "label": "GST"
+  },
+  {
+   "fieldname": "total",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "Total"
+  },
+  {
+   "fieldname": "renews_on",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Renews On"
+  },
+  {
+   "fieldname": "cycle",
+   "fieldtype": "Select",
+   "label": "Cycle",
+   "options": "monthly\nannual"
+  },
+  {
+   "fieldname": "upi",
+   "fieldtype": "Data",
+   "label": "UPI"
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Status",
+   "options": "active\ncancelled"
+  },
+  {
+   "fieldname": "effective_until",
+   "fieldtype": "Date",
+   "label": "Effective Until"
+  },
+  {
+   "fieldname": "prorated_charge",
+   "fieldtype": "Currency",
+   "label": "Prorated Charge"
+  },
+  {
+   "description": "Projected number of notices for the current cycle",
+   "fieldname": "projected_notices",
+   "fieldtype": "Int",
+   "label": "Projected Notices",
+   "read_only": 1
+  },
+  {
+   "default": "25",
+   "description": "Maximum number of notices allowed",
+   "fieldname": "notice_cap",
+   "fieldtype": "Int",
+   "label": "Notice Cap"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2026-09-09 14:48:18.682641",
+ "modified_by": "Administrator",
+ "module": "Litwatch",
+ "name": "Subscription",
+ "naming_rule": "By fieldname",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

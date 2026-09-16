@@ -1,0 +1,65 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2026-09-09 11:11:49.133880",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "matter",
+  "score",
+  "band",
+  "factors",
+  "validation_checks"
+ ],
+ "fields": [
+  {
+   "fieldname": "matter",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Matter",
+   "options": "Workbench Matter",
+   "reqd": 1
+  },
+  {
+   "fieldname": "score",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "Score"
+  },
+  {
+   "fieldname": "band",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Band"
+  },
+  {
+   "fieldname": "factors",
+   "fieldtype": "Table",
+   "label": "Factors",
+   "options": "Validation Factor"
+  },
+  {
+   "description": "Individual validation checks (GSTIN checksum, date ordering, etc.)",
+   "fieldname": "validation_checks",
+   "fieldtype": "Table",
+   "label": "Validation Checks",
+   "options": "Validation Check"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2026-09-14 15:01:49.558149",
+ "modified_by": "Administrator",
+ "module": "Litwatch",
+ "name": "Workbench Validation Result",
+ "naming_rule": "Random",
+ "owner": "Administrator",
+ "permissions": [],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

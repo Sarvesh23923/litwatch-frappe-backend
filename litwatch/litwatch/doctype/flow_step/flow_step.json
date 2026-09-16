@@ -1,0 +1,42 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2026-09-09 11:09:59.241198",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "step_name",
+  "stage_bucket"
+ ],
+ "fields": [
+  {
+   "fieldname": "step_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Step Name"
+  },
+  {
+   "fieldname": "stage_bucket",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Stage Bucket",
+   "options": "notice\nreply\nhearing\norder\nappeal\nclosed"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2026-09-09 11:09:59.241198",
+ "modified_by": "Administrator",
+ "module": "Litwatch",
+ "name": "Flow Step",
+ "owner": "Administrator",
+ "permissions": [],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

@@ -1,0 +1,101 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2026-09-09 14:41:11.748627",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "financial_year",
+  "form",
+  "section",
+  "gstr9_due_date",
+  "scn_window",
+  "order_window",
+  "appeal_window",
+  "description",
+  "is_active"
+ ],
+ "fields": [
+  {
+   "description": "Financial year (e.g., 2025-26)",
+   "fieldname": "financial_year",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Financial Year",
+   "reqd": 1
+  },
+  {
+   "description": "Form type (e.g., GSTR-9, GSTR-3B)",
+   "fieldname": "form",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Form",
+   "reqd": 1
+  },
+  {
+   "description": "Section number (e.g., 73, 74, 74A)",
+   "fieldname": "section",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Section",
+   "reqd": 1
+  },
+  {
+   "description": "Due date for filing GSTR-9",
+   "fieldname": "gstr9_due_date",
+   "fieldtype": "Date",
+   "label": "GSTR-9 Due Date",
+   "reqd": 1
+  },
+  {
+   "default": "30",
+   "description": "Window for Show Cause Notice in days",
+   "fieldname": "scn_window",
+   "fieldtype": "Int",
+   "label": "SCN Window (Days)"
+  },
+  {
+   "default": "30",
+   "description": "Window for Order in days",
+   "fieldname": "order_window",
+   "fieldtype": "Int",
+   "label": "Order Window (Days)"
+  },
+  {
+   "default": "60",
+   "description": "Window for Appeal in days",
+   "fieldname": "appeal_window",
+   "fieldtype": "Int",
+   "label": "Appeal Window (Days)"
+  },
+  {
+   "description": "Additional details about the limitation rule",
+   "fieldname": "description",
+   "fieldtype": "Small Text",
+   "label": "Description"
+  },
+  {
+   "default": "1",
+   "description": "Whether this rule is currently active",
+   "fieldname": "is_active",
+   "fieldtype": "Check",
+   "in_list_view": 1,
+   "label": "Is Active"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2026-09-09 14:41:11.748627",
+ "modified_by": "Administrator",
+ "module": "Litwatch",
+ "name": "Limitation Rule",
+ "owner": "Administrator",
+ "permissions": [],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "financial_year",
+ "sort_order": "DESC",
+ "states": []
+}

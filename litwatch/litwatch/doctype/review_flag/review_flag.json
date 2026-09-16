@@ -1,0 +1,55 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2026-09-09 11:00:56.084292",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "flag_label",
+  "detail",
+  "corrected_value",
+  "resolved"
+ ],
+ "fields": [
+  {
+   "fieldname": "flag_label",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Flag Label"
+  },
+  {
+   "fieldname": "detail",
+   "fieldtype": "Small Text",
+   "in_list_view": 1,
+   "label": "Detail"
+  },
+  {
+   "fieldname": "corrected_value",
+   "fieldtype": "Data",
+   "label": "Corrected Value"
+  },
+  {
+   "default": "0",
+   "fieldname": "resolved",
+   "fieldtype": "Check",
+   "in_list_view": 1,
+   "label": "Resolved"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2026-09-09 11:00:56.084292",
+ "modified_by": "Administrator",
+ "module": "Litwatch",
+ "name": "Review Flag",
+ "owner": "Administrator",
+ "permissions": [],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

@@ -1,0 +1,181 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "field:notice_id",
+ "creation": "2026-09-09 11:00:12.338328",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "notice_id",
+  "client",
+  "gstin",
+  "section",
+  "notice_type",
+  "label",
+  "state",
+  "city",
+  "fy",
+  "amount",
+  "filed_date",
+  "consultant",
+  "risk",
+  "status",
+  "due_date",
+  "source_pdf_url",
+  "extracted_by_ai",
+  "draft_id",
+  "timeline",
+  "resolved_on"
+ ],
+ "fields": [
+  {
+   "fieldname": "notice_id",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Notice ID",
+   "reqd": 1,
+   "unique": 1
+  },
+  {
+   "fieldname": "client",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Client",
+   "options": "Client",
+   "reqd": 1
+  },
+  {
+   "fieldname": "gstin",
+   "fieldtype": "Link",
+   "label": "GSTIN",
+   "options": "GST Registration",
+   "reqd": 1
+  },
+  {
+   "fieldname": "section",
+   "fieldtype": "Data",
+   "label": "Section"
+  },
+  {
+   "fieldname": "notice_type",
+   "fieldtype": "Link",
+   "label": "Notice Type",
+   "options": "Notice Type"
+  },
+  {
+   "fieldname": "label",
+   "fieldtype": "Data",
+   "label": "Label"
+  },
+  {
+   "fieldname": "state",
+   "fieldtype": "Link",
+   "label": "State",
+   "options": "State"
+  },
+  {
+   "fieldname": "city",
+   "fieldtype": "Data",
+   "label": "City"
+  },
+  {
+   "fieldname": "fy",
+   "fieldtype": "Data",
+   "label": "FY"
+  },
+  {
+   "fieldname": "amount",
+   "fieldtype": "Currency",
+   "label": "Amount"
+  },
+  {
+   "fieldname": "filed_date",
+   "fieldtype": "Date",
+   "label": "Filed Date"
+  },
+  {
+   "fieldname": "consultant",
+   "fieldtype": "Link",
+   "label": "Consultant",
+   "options": "Consultant"
+  },
+  {
+   "fieldname": "risk",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Risk",
+   "options": "critical\nhigh\nmedium\nlow"
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Status",
+   "options": "Under review\nFiled\nResolved\nPending"
+  },
+  {
+   "fieldname": "due_date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Due Date"
+  },
+  {
+   "fieldname": "source_pdf_url",
+   "fieldtype": "Attach",
+   "label": "Source PDF"
+  },
+  {
+   "default": "0",
+   "fieldname": "extracted_by_ai",
+   "fieldtype": "Check",
+   "label": "Extracted By AI"
+  },
+  {
+   "fieldname": "draft_id",
+   "fieldtype": "Data",
+   "label": "Draft ID"
+  },
+  {
+   "fieldname": "timeline",
+   "fieldtype": "Table",
+   "label": "Timeline",
+   "options": "Notice Timeline"
+  },
+  {
+   "depends_on": "eval:doc.status == \"Resolved\"",
+   "fieldname": "resolved_on",
+   "fieldtype": "Datetime",
+   "label": "Resolved On",
+   "read_only": 1
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2026-09-09 14:15:28.772495",
+ "modified_by": "Administrator",
+ "module": "Litwatch",
+ "name": "Litigation Notice",
+ "naming_rule": "By fieldname",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

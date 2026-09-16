@@ -1,0 +1,142 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2026-09-09 11:10:53.712296",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "notice",
+  "gstin",
+  "payment_type",
+  "fy",
+  "bank_reference",
+  "demand",
+  "voluntary_payment",
+  "payment_under_protest",
+  "pre_deposit",
+  "balance",
+  "cgst",
+  "sgst",
+  "igst",
+  "interest",
+  "penalty",
+  "tax_breakdown"
+ ],
+ "fields": [
+  {
+   "fieldname": "notice",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Notice",
+   "options": "Litigation Notice"
+  },
+  {
+   "fieldname": "gstin",
+   "fieldtype": "Data",
+   "label": "GSTIN"
+  },
+  {
+   "fieldname": "payment_type",
+   "fieldtype": "Data",
+   "label": "Payment Type"
+  },
+  {
+   "fieldname": "fy",
+   "fieldtype": "Data",
+   "label": "FY"
+  },
+  {
+   "fieldname": "bank_reference",
+   "fieldtype": "Data",
+   "label": "Bank Reference"
+  },
+  {
+   "fieldname": "demand",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "Demand"
+  },
+  {
+   "fieldname": "voluntary_payment",
+   "fieldtype": "Currency",
+   "label": "Voluntary Payment"
+  },
+  {
+   "fieldname": "payment_under_protest",
+   "fieldtype": "Currency",
+   "label": "Payment Under Protest"
+  },
+  {
+   "fieldname": "pre_deposit",
+   "fieldtype": "Currency",
+   "label": "Pre Deposit"
+  },
+  {
+   "fieldname": "balance",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "Balance"
+  },
+  {
+   "fieldname": "cgst",
+   "fieldtype": "Currency",
+   "label": "CGST"
+  },
+  {
+   "fieldname": "sgst",
+   "fieldtype": "Currency",
+   "label": "SGST"
+  },
+  {
+   "fieldname": "igst",
+   "fieldtype": "Currency",
+   "label": "IGST"
+  },
+  {
+   "fieldname": "interest",
+   "fieldtype": "Currency",
+   "label": "Interest"
+  },
+  {
+   "fieldname": "penalty",
+   "fieldtype": "Currency",
+   "label": "Penalty"
+  },
+  {
+   "description": "Detailed tax breakdown (CGST/SGST/IGST)",
+   "fieldname": "tax_breakdown",
+   "fieldtype": "Table",
+   "label": "Tax Breakdown",
+   "options": "Tax Breakdown"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2026-09-09 14:32:17.794814",
+ "modified_by": "Administrator",
+ "module": "Litwatch",
+ "name": "Payment",
+ "naming_rule": "Random",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

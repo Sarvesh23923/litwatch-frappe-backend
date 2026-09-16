@@ -1,0 +1,174 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2026-09-09 11:11:48.641773",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "notice",
+  "form",
+  "provision",
+  "reply_form",
+  "window",
+  "playbook",
+  "arn",
+  "alert_code",
+  "issued_date",
+  "served_date",
+  "due_date",
+  "tax_period",
+  "stage",
+  "confidence",
+  "extraction_fields",
+  "demand_tax",
+  "demand_interest",
+  "demand_penalty",
+  "issues",
+  "validation_result"
+ ],
+ "fields": [
+  {
+   "fieldname": "notice",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Notice",
+   "options": "Litigation Notice",
+   "reqd": 1
+  },
+  {
+   "fieldname": "form",
+   "fieldtype": "Data",
+   "label": "Form"
+  },
+  {
+   "fieldname": "provision",
+   "fieldtype": "Data",
+   "label": "Provision"
+  },
+  {
+   "fieldname": "reply_form",
+   "fieldtype": "Data",
+   "label": "Reply Form"
+  },
+  {
+   "default": "30",
+   "fieldname": "window",
+   "fieldtype": "Int",
+   "label": "Window Days"
+  },
+  {
+   "fieldname": "playbook",
+   "fieldtype": "Data",
+   "label": "Playbook"
+  },
+  {
+   "fieldname": "arn",
+   "fieldtype": "Data",
+   "label": "ARN"
+  },
+  {
+   "fieldname": "alert_code",
+   "fieldtype": "Data",
+   "label": "Alert Code"
+  },
+  {
+   "fieldname": "issued_date",
+   "fieldtype": "Date",
+   "label": "Issued Date"
+  },
+  {
+   "fieldname": "served_date",
+   "fieldtype": "Date",
+   "label": "Served Date"
+  },
+  {
+   "fieldname": "due_date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Due Date"
+  },
+  {
+   "fieldname": "tax_period",
+   "fieldtype": "Data",
+   "label": "Tax Period"
+  },
+  {
+   "fieldname": "stage",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Stage",
+   "options": "review\ndraft"
+  },
+  {
+   "fieldname": "confidence",
+   "fieldtype": "Percent",
+   "in_list_view": 1,
+   "label": "Confidence"
+  },
+  {
+   "fieldname": "extraction_fields",
+   "fieldtype": "Table",
+   "label": "Extraction Fields",
+   "options": "Workbench Extraction Field"
+  },
+  {
+   "description": "Tax component of the demand",
+   "fieldname": "demand_tax",
+   "fieldtype": "Currency",
+   "label": "Demand Tax"
+  },
+  {
+   "description": "Interest component of the demand",
+   "fieldname": "demand_interest",
+   "fieldtype": "Currency",
+   "label": "Demand Interest"
+  },
+  {
+   "description": "Penalty component of the demand",
+   "fieldname": "demand_penalty",
+   "fieldtype": "Currency",
+   "label": "Demand Penalty"
+  },
+  {
+   "fieldname": "issues",
+   "fieldtype": "Table",
+   "label": "Issues",
+   "options": "Workbench Issue"
+  },
+  {
+   "fieldname": "validation_result",
+   "fieldtype": "Link",
+   "label": "Validation Result",
+   "options": "Workbench Validation Result"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2026-09-15 09:48:18.677958",
+ "modified_by": "Administrator",
+ "module": "Litwatch",
+ "name": "Workbench Matter",
+ "naming_rule": "Random",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

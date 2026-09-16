@@ -1,0 +1,80 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2026-09-14 14:15:54.155436",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "text",
+  "gap",
+  "sort_order",
+  "parentfield",
+  "parenttype",
+  "parent"
+ ],
+ "fields": [
+  {
+   "fieldname": "text",
+   "fieldtype": "Small Text",
+   "in_list_view": 1,
+   "label": "Text"
+  },
+  {
+   "default": "0",
+   "fieldname": "gap",
+   "fieldtype": "Check",
+   "label": "Is Gap"
+  },
+  {
+   "fieldname": "sort_order",
+   "fieldtype": "Int",
+   "label": "Order"
+  },
+  {
+   "fieldname": "parentfield",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Parent Field",
+   "no_copy": 1,
+   "print_hide": 1,
+   "read_only": 1,
+   "report_hide": 1
+  },
+  {
+   "fieldname": "parenttype",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Parent Type",
+   "no_copy": 1,
+   "print_hide": 1,
+   "read_only": 1,
+   "report_hide": 1
+  },
+  {
+   "fieldname": "parent",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Parent",
+   "no_copy": 1,
+   "print_hide": 1,
+   "read_only": 1,
+   "report_hide": 1
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2026-09-14 14:15:54.155436",
+ "modified_by": "Administrator",
+ "module": "Litwatch",
+ "name": "Workbench Draft Paragraph",
+ "owner": "Administrator",
+ "permissions": [],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

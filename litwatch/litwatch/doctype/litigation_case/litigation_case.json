@@ -1,0 +1,114 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2026-09-09 11:10:53.501242",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "notice",
+  "client",
+  "flow",
+  "current_step",
+  "state",
+  "deadline",
+  "next_action",
+  "closed",
+  "critical",
+  "key_dates"
+ ],
+ "fields": [
+  {
+   "fieldname": "notice",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Notice",
+   "options": "Litigation Notice",
+   "reqd": 1
+  },
+  {
+   "fieldname": "client",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Client",
+   "options": "Client",
+   "reqd": 1
+  },
+  {
+   "fieldname": "flow",
+   "fieldtype": "Link",
+   "label": "Flow",
+   "options": "Litigation Flow"
+  },
+  {
+   "fieldname": "current_step",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Current Step"
+  },
+  {
+   "fieldname": "state",
+   "fieldtype": "Link",
+   "label": "State",
+   "options": "State"
+  },
+  {
+   "fieldname": "deadline",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Deadline"
+  },
+  {
+   "fieldname": "next_action",
+   "fieldtype": "Data",
+   "label": "Next Action"
+  },
+  {
+   "default": "0",
+   "fieldname": "closed",
+   "fieldtype": "Check",
+   "label": "Closed"
+  },
+  {
+   "default": "0",
+   "fieldname": "critical",
+   "fieldtype": "Check",
+   "in_list_view": 1,
+   "label": "Critical"
+  },
+  {
+   "fieldname": "key_dates",
+   "fieldtype": "Table",
+   "label": "Key Dates",
+   "options": "Case Key Date"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2026-09-09 11:10:53.501242",
+ "modified_by": "Administrator",
+ "module": "Litwatch",
+ "name": "Litigation Case",
+ "naming_rule": "Random",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

@@ -1,0 +1,133 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "field:filing_id",
+ "creation": "2026-09-09 11:00:55.894566",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "filing_id",
+  "client",
+  "notice",
+  "filing_type",
+  "reply_status",
+  "status",
+  "arn",
+  "filed_date",
+  "ack_file",
+  "filed_by",
+  "matter_closed",
+  "reminders_suppressed"
+ ],
+ "fields": [
+  {
+   "fieldname": "filing_id",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Filing ID",
+   "reqd": 1,
+   "unique": 1
+  },
+  {
+   "fieldname": "client",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Client",
+   "options": "Client",
+   "reqd": 1
+  },
+  {
+   "fieldname": "notice",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Notice",
+   "options": "Litigation Notice",
+   "reqd": 1
+  },
+  {
+   "fieldname": "filing_type",
+   "fieldtype": "Data",
+   "label": "Filing Type"
+  },
+  {
+   "depends_on": "0",
+   "description": "DEPRECATED - Use \"status\" field instead",
+   "fieldname": "reply_status",
+   "fieldtype": "Select",
+   "label": "Reply Status",
+   "options": "Filed\nPending"
+  },
+  {
+   "description": "Current filing status (filed/pending)",
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Status",
+   "options": "filed\npending"
+  },
+  {
+   "fieldname": "arn",
+   "fieldtype": "Data",
+   "label": "ARN"
+  },
+  {
+   "fieldname": "filed_date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Filed Date"
+  },
+  {
+   "fieldname": "ack_file",
+   "fieldtype": "Attach",
+   "label": "Ack File"
+  },
+  {
+   "fieldname": "filed_by",
+   "fieldtype": "Link",
+   "label": "Filed By",
+   "options": "Consultant"
+  },
+  {
+   "default": "0",
+   "fieldname": "matter_closed",
+   "fieldtype": "Check",
+   "label": "Matter Closed"
+  },
+  {
+   "default": "0",
+   "description": "Stop sending reminders for this matter after filing",
+   "fieldname": "reminders_suppressed",
+   "fieldtype": "Check",
+   "label": "Reminders Suppressed"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2026-09-09 14:48:56.759445",
+ "modified_by": "Administrator",
+ "module": "Litwatch",
+ "name": "Filing",
+ "naming_rule": "By fieldname",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

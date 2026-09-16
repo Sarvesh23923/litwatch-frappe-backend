@@ -1,0 +1,103 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "field:plan_name",
+ "creation": "2026-09-09 11:01:35.330882",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "plan_name",
+  "price",
+  "notice_cap",
+  "gstin_cap",
+  "storage_cap",
+  "user_cap",
+  "drafts_cap",
+  "api_calls_cap",
+  "overage_rate_per_notice"
+ ],
+ "fields": [
+  {
+   "fieldname": "plan_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Plan Name",
+   "reqd": 1,
+   "unique": 1
+  },
+  {
+   "fieldname": "price",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "Price"
+  },
+  {
+   "fieldname": "notice_cap",
+   "fieldtype": "Int",
+   "label": "Notice Cap"
+  },
+  {
+   "fieldname": "gstin_cap",
+   "fieldtype": "Int",
+   "label": "GSTIN Cap"
+  },
+  {
+   "fieldname": "storage_cap",
+   "fieldtype": "Int",
+   "label": "Storage Cap (bytes)"
+  },
+  {
+   "fieldname": "user_cap",
+   "fieldtype": "Int",
+   "label": "User Cap"
+  },
+  {
+   "fieldname": "drafts_cap",
+   "fieldtype": "Int",
+   "label": "Drafts Cap"
+  },
+  {
+   "default": "2000",
+   "description": "Maximum API calls allowed per billing cycle",
+   "fieldname": "api_calls_cap",
+   "fieldtype": "Int",
+   "label": "API Calls Cap"
+  },
+  {
+   "default": "180",
+   "description": "Additional charge per notice beyond cap",
+   "fieldname": "overage_rate_per_notice",
+   "fieldtype": "Currency",
+   "label": "Overage Rate per Notice"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2026-09-09 14:17:55.716369",
+ "modified_by": "Administrator",
+ "module": "Litwatch",
+ "name": "Plan",
+ "naming_rule": "By fieldname",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

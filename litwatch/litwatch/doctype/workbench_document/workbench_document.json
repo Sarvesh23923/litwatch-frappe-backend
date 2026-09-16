@@ -1,0 +1,101 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2026-09-09 11:11:48.932741",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "matter",
+  "document_name",
+  "role",
+  "doc_type",
+  "pages",
+  "facsimile_data",
+  "parentfield",
+  "parenttype",
+  "parent"
+ ],
+ "fields": [
+  {
+   "fieldname": "matter",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Matter",
+   "options": "Workbench Matter"
+  },
+  {
+   "fieldname": "document_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Document Name"
+  },
+  {
+   "fieldname": "role",
+   "fieldtype": "Select",
+   "label": "Role",
+   "options": "main\nsupp"
+  },
+  {
+   "fieldname": "doc_type",
+   "fieldtype": "Data",
+   "label": "Doc Type"
+  },
+  {
+   "fieldname": "pages",
+   "fieldtype": "Int",
+   "label": "Pages"
+  },
+  {
+   "fieldname": "facsimile_data",
+   "fieldtype": "Long Text",
+   "label": "Facsimile Data"
+  },
+  {
+   "fieldname": "parentfield",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Parent Field",
+   "no_copy": 1,
+   "print_hide": 1,
+   "read_only": 1,
+   "report_hide": 1
+  },
+  {
+   "fieldname": "parenttype",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Parent Type",
+   "no_copy": 1,
+   "print_hide": 1,
+   "read_only": 1,
+   "report_hide": 1
+  },
+  {
+   "fieldname": "parent",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Parent",
+   "no_copy": 1,
+   "print_hide": 1,
+   "read_only": 1,
+   "report_hide": 1
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2026-09-14 14:59:29.902439",
+ "modified_by": "Administrator",
+ "module": "Litwatch",
+ "name": "Workbench Document",
+ "naming_rule": "Random",
+ "owner": "Administrator",
+ "permissions": [],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

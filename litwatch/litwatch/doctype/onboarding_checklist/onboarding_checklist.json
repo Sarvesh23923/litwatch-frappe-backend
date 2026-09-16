@@ -1,0 +1,109 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "field:title",
+ "creation": "2026-09-09 14:37:37.599131",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "title",
+  "detail",
+  "stage",
+  "order",
+  "section",
+  "is_completed",
+  "completed_on",
+  "link_doctype",
+  "link_document",
+  "notes"
+ ],
+ "fields": [
+  {
+   "description": "Checklist item title",
+   "fieldname": "title",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Title",
+   "reqd": 1,
+   "unique": 1
+  },
+  {
+   "description": "Detailed description of the checklist item",
+   "fieldname": "detail",
+   "fieldtype": "Small Text",
+   "label": "Detail"
+  },
+  {
+   "default": "pending",
+   "description": "Current stage of the checklist item",
+   "fieldname": "stage",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Stage",
+   "options": "now\ndone\npending"
+  },
+  {
+   "default": "0",
+   "description": "Display order",
+   "fieldname": "order",
+   "fieldtype": "Int",
+   "label": "Order"
+  },
+  {
+   "description": "Section/category of the checklist item",
+   "fieldname": "section",
+   "fieldtype": "Select",
+   "label": "Section",
+   "options": "Getting Started\nGSTIN Setup\nClient Management\nNotice Processing\nAdvanced"
+  },
+  {
+   "default": "0",
+   "description": "Whether this checklist item is completed",
+   "fieldname": "is_completed",
+   "fieldtype": "Check",
+   "label": "Is Completed"
+  },
+  {
+   "description": "When this item was completed",
+   "fieldname": "completed_on",
+   "fieldtype": "Datetime",
+   "label": "Completed On",
+   "read_only": 1
+  },
+  {
+   "description": "Related doctype for this checklist item",
+   "fieldname": "link_doctype",
+   "fieldtype": "Link",
+   "label": "Link Doctype",
+   "options": "DocType"
+  },
+  {
+   "description": "Related document for this checklist item",
+   "fieldname": "link_document",
+   "fieldtype": "Dynamic Link",
+   "label": "Link Document",
+   "options": "link_doctype"
+  },
+  {
+   "description": "Additional notes or comments",
+   "fieldname": "notes",
+   "fieldtype": "Text",
+   "label": "Notes"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2026-09-09 14:37:37.599131",
+ "modified_by": "Administrator",
+ "module": "Litwatch",
+ "name": "Onboarding Checklist",
+ "owner": "Administrator",
+ "permissions": [],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "order",
+ "sort_order": "ASC",
+ "states": []
+}

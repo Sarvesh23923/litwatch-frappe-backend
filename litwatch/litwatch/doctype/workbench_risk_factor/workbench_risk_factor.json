@@ -35,36 +35,6 @@
    "fieldname": "sort_order",
    "fieldtype": "Int",
    "label": "Order"
-  },
-  {
-   "fieldname": "parentfield",
-   "fieldtype": "Data",
-   "hidden": 1,
-   "label": "Parent Field",
-   "no_copy": 1,
-   "print_hide": 1,
-   "read_only": 1,
-   "report_hide": 1
-  },
-  {
-   "fieldname": "parenttype",
-   "fieldtype": "Data",
-   "hidden": 1,
-   "label": "Parent Type",
-   "no_copy": 1,
-   "print_hide": 1,
-   "read_only": 1,
-   "report_hide": 1
-  },
-  {
-   "fieldname": "parent",
-   "fieldtype": "Data",
-   "hidden": 1,
-   "label": "Parent",
-   "no_copy": 1,
-   "print_hide": 1,
-   "read_only": 1,
-   "report_hide": 1
   }
  ],
  "grid_page_length": 50,

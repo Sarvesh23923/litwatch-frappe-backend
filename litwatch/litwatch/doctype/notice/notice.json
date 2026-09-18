@@ -1,0 +1,169 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "naming_series:",
+ "creation": "2026-09-17 00:00:00.000000",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "naming_series",
+  "client_id",
+  "business_id",
+  "column_break_1",
+  "section_break_core",
+  "portal_metadata",
+  "document_identity",
+  "taxpayer",
+  "notice",
+  "jurisdiction_and_authority",
+  "legal_basis",
+  "demand",
+  "issues",
+  "hearing",
+  "extensions",
+  "related_proceedings",
+  "document_contents",
+  "artifacts",
+  "document_files",
+  "review"
+ ],
+ "fields": [
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "label": "Naming Series",
+   "options": "DRC-.YYYY.-",
+   "default": "DRC-.YYYY.-",
+   "reqd": 1
+  },
+  {
+   "fieldname": "client_id",
+   "fieldtype": "Link",
+   "label": "Client ID",
+   "options": "User",
+   "reqd": 1,
+   "in_list_view": 1,
+   "in_standard_filter": 1
+  },
+  {
+   "fieldname": "business_id",
+   "fieldtype": "Data",
+   "label": "Business ID"
+  },
+  {
+   "fieldname": "column_break_1",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_core",
+   "fieldtype": "Section Break",
+   "label": "Notice Details"
+  },
+  {
+   "fieldname": "portal_metadata",
+   "fieldtype": "JSON",
+   "label": "Portal Metadata"
+  },
+  {
+   "fieldname": "document_identity",
+   "fieldtype": "JSON",
+   "label": "Document Identity"
+  },
+  {
+   "fieldname": "taxpayer",
+   "fieldtype": "JSON",
+   "label": "Taxpayer"
+  },
+  {
+   "fieldname": "notice",
+   "fieldtype": "JSON",
+   "label": "Notice"
+  },
+  {
+   "fieldname": "jurisdiction_and_authority",
+   "fieldtype": "JSON",
+   "label": "Jurisdiction And Authority"
+  },
+  {
+   "fieldname": "legal_basis",
+   "fieldtype": "JSON",
+   "label": "Legal Basis"
+  },
+  {
+   "fieldname": "demand",
+   "fieldtype": "JSON",
+   "label": "Demand"
+  },
+  {
+   "fieldname": "issues",
+   "fieldtype": "JSON",
+   "label": "Issues"
+  },
+  {
+   "fieldname": "hearing",
+   "fieldtype": "JSON",
+   "label": "Hearing"
+  },
+  {
+   "fieldname": "extensions",
+   "fieldtype": "JSON",
+   "label": "Extensions"
+  },
+  {
+   "fieldname": "related_proceedings",
+   "fieldtype": "JSON",
+   "label": "Related Proceedings"
+  },
+  {
+   "fieldname": "document_contents",
+   "fieldtype": "JSON",
+   "label": "Document Contents"
+  },
+  {
+   "fieldname": "artifacts",
+   "fieldtype": "JSON",
+   "label": "Artifacts"
+  },
+  {
+   "fieldname": "document_files",
+   "fieldtype": "Table",
+   "label": "Document Files",
+   "options": "Notice Document File"
+  },
+  {
+   "fieldname": "review",
+   "fieldtype": "JSON",
+   "label": "Review"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2026-09-17 00:00:00.000000",
+ "modified_by": "Administrator",
+ "module": "Litwatch",
+ "name": "Notice",
+ "naming_rule": "By \"Naming Series\" field",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1
+}
